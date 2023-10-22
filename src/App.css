@@ -32,7 +32,60 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  /* Center vertically */
+  min-height: 100vh;
+  /* Ensure it takes the full height of the viewport */
+}
+
+.color-picker {
+  display: inline-block;
+  text-align: center;
+  margin: 20px;
+}
+
+button {
+  /* background-color: #0074d9; */
+  color: black;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.color-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.color {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.selected-color {
+  margin-top: 10px;
+  padding: 4px;
+}
+
+/* Additional styles for better visualization */
+.color-picker .color {
+  border: 2px solid white;
+}
+
+.color-picker .color:hover {
+  border: 2px solid black;
 }
